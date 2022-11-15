@@ -31,7 +31,7 @@ keymap("i", "<F9>", '<ESC> :w <cr>:AsyncRun g++-12 -std=c++17 "$(VIM_FILEPATH)" 
 
 -- Copy template command.
 keymap("n", "ct", ":-1read ~/Documents/mycodes/template/template.cpp<cr>", opts)
-keymap("n", "cy", ":-1read ~/Documents/mycodes/template/template.cpp<cr>", opts)
+keymap("n", "cy", ":-1read ~/Documents/mycodes/template/template1.cpp<cr>", opts)
 
 -- Change tab to 4 spaces.
 vim.opt.tabstop = 4 -- size of a hard tabstop
