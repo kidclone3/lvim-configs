@@ -31,6 +31,7 @@ keymap("i", "<F9>", '<ESC> :w <cr>:AsyncRun g++-12 -std=c++17 "$(VIM_FILEPATH)" 
 
 -- Copy template command.
 keymap("n", "ct", ":-1read ~/Documents/mycodes/template/template.cpp<cr>", opts)
+keymap("n", "cy", ":-1read ~/Documents/mycodes/template/template.cpp<cr>", opts)
 
 -- Change tab to 4 spaces.
 vim.opt.tabstop = 4 -- size of a hard tabstop
@@ -47,4 +48,6 @@ keymap("n", "<C-a>", ":%y<cr>", opts)
 
 -- Fuzzy find / Telescope.
 keymap("n", "<F12>", ":Telescope find_files", opts)
+keymap("n", "<F5>", ":NvimTreeRefresh<cr>", opts)
 
+vim.g.leader = "<space>"
